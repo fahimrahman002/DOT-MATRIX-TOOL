@@ -1,0 +1,90 @@
+@font-face {
+	font-family: Courgette-Regular;
+	src: url(../fonts/Courgette-Regular.ttf);
+}
+
+.navbar-brand {
+	font-family: Courgette-Regular;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.heading{
+    margin-top: 3%;
+    text-align: center;
+}
+.generate-btn {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.copy-btn {
+	width: 31px;
+	height: 28px;
+	cursor: pointer;
+}
+.output {
+	margin-top: 6px;
+	margin-bottom: 15px;
+}
+.starting-address {
+	text-align: center;
+}
+.sequence-with {
+	margin-bottom: 7px;
+	margin-top: 18px;
+}
+
+.clear-btn {
+	width: 36px;
+	cursor: pointer;
+}
+.container {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.value-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.my_table {
+	margin-left: 38%;
+	margin-right: 35%;
+}
+input[type="checkbox"] {
+	cursor: pointer;
+	border-radius: 50% !important;
+}
+
+input[type="checkbox"]:checked {
+	background-color: rgb(255, 43, 43);
+	border-color: rgb(255, 43, 43);
+}
+.sequence-with-checkbox:checked {
+	background-color: rgb(50, 129, 175) !important;
+	border-color: rgb(50, 129, 175) !important;
+}
+
+input[type="checkbox"]:focus {
+	box-shadow: none;
+}
+.top_btns {
+	display: flex;
+	flex: auto;
+	flex-direction: row;
+	justify-content: end;
+}
+.nav-content {
+	margin-left: 44px;
+}
+
+.navbar-nav {
+	margin-left: 44px;
+}

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dot Matrix Tool</title>
+		<link rel="icon" type="image/png" href="images/dot.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+			integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+			integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid nav-content">
+				<a class="navbar-brand" href="#">FRP</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<h1 class="heading">DOT MATRIX CODE GENERATOR</h1>
+		<div class="container">
+			<div class="my_table">
+				<div class="top_btns">
+					<img
+						src="images/clear.png"
+						id="clearBtn"
+						class="clear-btn"
+						alt=""
+						srcset=""
+					/>
+				</div>
+				<div class="form-group">
+					<input
+						type="text"
+						id="startingAddress"
+						class="form-control starting-address"
+						id="exampleFormControlInput1"
+						placeholder="Starting Address"
+					/>
+				</div>
+				<div class="sequence-with">
+					<input
+						class="form-check-input sequence-with-checkbox"
+						type="checkbox"
+						name="sequence-with-checkbox"
+						id="sequenceWithCheckbox"
+					/>
+					<label class="form-check-label" for="sequenceWithCheckbox"
+						>Track My Sequence</label
+					>
+				</div>
+
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">1</th>
+							<th scope="col">2</th>
+							<th scope="col">3</th>
+							<th scope="col">4</th>
+							<th scope="col">5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput1"
+										id="checkBoxInput1"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput2"
+										id="checkBoxInput2"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput3"
+										id="checkBoxInput3"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput4"
+										id="checkBoxInput4"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput5"
+										id="checkBoxInput5"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput6"
+										id="checkBoxInput6"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput7"
+										id="checkBoxInput7"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput8"
+										id="checkBoxInput8"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput9"
+										id="checkBoxInput9"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput10"
+										id="checkBoxInput10"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput11"
+										id="checkBoxInput11"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput12"
+										id="checkBoxInput12"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput13"
+										id="checkBoxInput13"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput14"
+										id="checkBoxInput14"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput15"
+										id="checkBoxInput15"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput16"
+										id="checkBoxInput16"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput36"
+										id="checkBoxInput17"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput18"
+										id="checkBoxInput18"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput19"
+										id="checkBoxInput19"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput20"
+										id="checkBoxInput20"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput21"
+										id="checkBoxInput21"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput22"
+										id="checkBoxInput22"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput23"
+										id="checkBoxInput23"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput24"
+										id="checkBoxInput24"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput25"
+										id="checkBoxInput25"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput26"
+										id="checkBoxInput26"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput27"
+										id="checkBoxInput27"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput28"
+										id="checkBoxInput28"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput29"
+										id="checkBoxInput29"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput30"
+										id="checkBoxInput30"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput31"
+										id="checkBoxInput31"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput32"
+										id="checkBoxInput32"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput33"
+										id="checkBoxInput33"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput34"
+										id="checkBoxInput34"
+									/>
+								</div>
+							</td>
+							<td>
+								<div class="form-check">
+									<input
+										class="form-check-input checkbox-input"
+										type="checkbox"
+										name="checkBoxInput35"
+										id="checkBoxInput35"
+									/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="value-div">
+					<button
+						type="button"
+						id="generateBtn"
+						class="btn btn-primary getValueBtn generate-btn"
+					>
+						Generate
+					</button>
+					<div class="output-div">
+						<div class="top_btns">
+							<img
+								src="images/copy.png"
+								id="copyBtn"
+								class="copy-btn"
+								alt=""
+								srcset=""
+							/>
+						</div>
+					</div>
+					<textarea
+						class="output"
+						id="output"
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+					></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="text-center text-lg-start bg-light text-muted">
+			<!-- Copyright -->
+			<div
+				class="text-center p-4"
+				style="background-color: rgba(0, 0, 0, 0.05)"
+			>
+				©
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				Copyright:
+				<a
+					class="text-reset fw-bold"
+					href="https://www.linkedin.com/in/md-fahim-rahman-313bab1a0/"
+					target="_blank"
+				>
+					Fahim Rahman
+				</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
